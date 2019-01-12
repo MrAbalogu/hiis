@@ -1,0 +1,167 @@
+html, body {
+  height: 100%; }
+
+::placeholder {
+  color: black;
+  font-size: 12px;
+  opacity: 1;
+  /* Firefox */ }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: black; }
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: black; }
+
+input[type=text], input[type=password], input[type=email], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  border: 1px solid #DDDDDD; }
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, textarea:focus {
+  box-shadow: 0 0 10px rgba(81, 203, 238, 0.5);
+  border: 1px solid rgba(0, 0, 128, 0.1); }
+
+.hr-black {
+  border-color: rgba(0, 0, 0, 0.5); }
+
+.hr-white {
+  border-color: rgba(255, 255, 255, 0.5); }
+
+.x-icon {
+  position: relative;
+  float: right;
+  width: 40px;
+  height: 40px; }
+
+.dark-screen {
+  border: 1px solid rgba(255, 255, 255, 0.8) !important;
+  color: rgba(255, 255, 255, 0.8) !important; }
+
+.float-left {
+  float: left; }
+
+.float-right {
+  float: right; }
+
+/**************************************
+	VARIABLES
+***************************************/
+.purple-button {
+  background: #BEA8F3;
+  color: white;
+  font-weight: 700;
+  border-radius: 34px;
+  padding: .3em 1em; }
+
+/**************************************
+	SPLASH PAGE AND EXP PAGES
+***************************************/
+.splash-wrapper {
+  background: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  height: 100%;
+  width: 100%; }
+
+.exp1-wrapper {
+  background: url("../img/exp1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  padding: 2em; }
+
+.exp2-wrapper {
+  background: url("../img/exp2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  padding: 2em; }
+
+.exp3-wrapper {
+  background: url("../img/exp3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  padding: 2em; }
+
+.login-wrapper {
+  background: url("../img/auth-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  padding: 1em; }
+
+.exp-container {
+  padding: 25px; }
+  .exp-container h2 {
+    text-align: center;
+    margin-top: 50%;
+    font-weight: bolder; }
+
+.exp1-text {
+  font-size: 2.5em;
+  text-align: center;
+  color: #50E3C2; }
+
+.exp2-text {
+  font-size: 2.5em;
+  text-align: center;
+  color: white; }
+
+.exp3-text {
+  font-size: 2.5em;
+  text-align: center;
+  color: white; }
+
+.splashimage {
+  margin: 10px 14%; }
+
+.splash-container {
+  color: #536299;
+  font-weight: bold;
+  height: 100%;
+  padding: 14em 2em; }
+
+.exp-header {
+  height: 10%; }
+
+.exp-landing {
+  padding-top: 10em;
+  height: 80%; }
+
+.exp-footer {
+  height: 10%;
+  width: 100%; }
+
+.exp-circles {
+  width: 100%; }
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  background: #50E3C2;
+  margin: .4em .5em; }
+
+.current-circle {
+  background: #BEA8F3; }
+
+.exp-button-cont {
+  margin-right: 3em; }
+
+/*# sourceMappingURL=main.css.map */

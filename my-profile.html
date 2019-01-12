@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HIIS UI Designs</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <img src="#" class="x-icon" id="remove-toggle"> 
+                <li>
+                    <a href="#">
+                        <img src="#" class="x-icon" id="remove-toggle"> 
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="#" class="x-icon" id="remove-toggle"> 
+                        My Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="#" class="x-icon" id="remove-toggle"> 
+                        Find a Provider
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="#" class="x-icon" id="remove-toggle"> 
+                        Request Reports
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="#" class="x-icon" id="remove-toggle"> 
+                        Log Complaints
+                    </a>
+                </li>
+                <hr/>
+                <li>
+                    <a href="#">
+                        <img src="#" class="x-icon" id="remove-toggle"> 
+                        About HIIS
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="#" class="x-icon" id="remove-toggle"> 
+                        Share App
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="#" class="x-icon" id="remove-toggle"> 
+                        Settings
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <header>
+          <a href="#menu-toggle" id="menu-toggle"><img src="#"></a>
+          <img src="#"> 
+          <span>My Profile</span>
+          <img src="#">  
+        </header>
+        <div>
+            <div>
+                <div>
+                    <img src="#">
+                </div>
+                <div>
+                    <ul>
+                        <li>Full Name: Stephen Sowole</li>
+                        <li>Policy Name: Bronze Plan</li>
+                        <li>ID Number: AXA9494943N</li>
+                        <li>HMO: Axa Mansard</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <button><u>Dependants</u></button>
+                <button><u>Benefits</u></button>
+            </div>
+            <div id="dependants">
+                <div>
+                    Sahamatu Sowole
+                    <p>AXAR9300END-01</p>
+                    <div>
+                        <img src="#"> View Claims
+                    </div>
+                </div>
+                <div>
+                    Sahamatu Sowole
+                    <p>AXAR9300END-01</p>
+                    <div>
+                        <img src="#"> View Claims
+                    </div>
+                </div>
+                <div>
+                    Sahamatu Sowole
+                    <p>AXAR9300END-01</p>
+                    <div>
+                        <img src="#"> View Claims
+                    </div>
+                </div>
+            </div>
+            <div id="benefits">
+                <div>
+                    Regions Covered: <span> Nigeria & India </span>
+                </div>
+                <div>
+                    Regions Covered: <span> Nigeria & India </span>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <img src="#">
+            <img src="#">
+            <img src="#">
+        </footer>
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    $("#remove-toggle").click(function(e){
+        e.preventDefault();
+        $("#wrapper").removeClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>

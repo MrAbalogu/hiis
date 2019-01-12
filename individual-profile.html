@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>HIIS UI Designs</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <img src="#" class="x-icon" id="remove-toggle"> 
+                <li>
+                    <a href="#">
+                        <img src="#" class="x-icon" id="remove-toggle"> 
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="#" class="x-icon" id="remove-toggle"> 
+                        My Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="#" class="x-icon" id="remove-toggle"> 
+                        Find a Provider
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="#" class="x-icon" id="remove-toggle"> 
+                        Request Reports
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="#" class="x-icon" id="remove-toggle"> 
+                        Log Complaints
+                    </a>
+                </li>
+                <hr/>
+                <li>
+                    <a href="#">
+                        <img src="#" class="x-icon" id="remove-toggle"> 
+                        About HIIS
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="#" class="x-icon" id="remove-toggle"> 
+                        Share App
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="#" class="x-icon" id="remove-toggle"> 
+                        Settings
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <header>
+          <a href="#menu-toggle" id="menu-toggle"><img src="#"></a>
+          <img src="#"> 
+          <span>Dashboard</span>
+          <img src="#">  
+        </header>
+        <div>
+            <div>
+                <div>
+                    Stephen Sowole
+                    <span>AXA3O44NDJ</span>
+                </div>
+                <div>
+                    Available Balance
+                    <h3>₦100,900</h3>
+                    <p>Premium Paid: ₦120,000</p>
+                </div>
+            </div>
+            <div>
+                <p>Dependants</p>
+                <img src=""> Sahamatu
+                <img src=""> Joy
+                <img src=""> Yusuf
+                <img src=""> Joshua
+                <img src=""> Princess
+            </div>
+            <div>
+                <p>Last Successful Login: 18th Nov. 2018 @ 8:00pm</p>
+                <i></i> Recent Claims
+            </div>
+        </div>
+        <footer>
+            <img src="#">
+            <img src="#">
+            <img src="#">
+        </footer>
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    $("#remove-toggle").click(function(e){
+        e.preventDefault();
+        $("#wrapper").removeClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
