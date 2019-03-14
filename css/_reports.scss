@@ -1,0 +1,74 @@
+$purple: #BEA8F3;
+$green: #50E3C2;
+$black: #4A4A4A;
+$light-green: #C4F2E8;
+
+.report-input {
+	margin-left: 27px;
+	border: 1px solid $green;
+}
+.report-input2 {
+	margin-left: 10px;
+	border: 1px solid $green;
+}
+.report-dropdown {
+	margin: 7px auto;
+	width: 86%;
+	button {
+		width: 100%;
+		padding: 0.7rem .95rem;
+		border: 1px solid $green !important;
+		background: white !important;
+		color: $black;
+		&:hover {
+			color: $black; 
+		}
+	}
+}
+.dropdown-menu {
+	width: 100% !important;
+	text-align: center;
+}
+.show>.btn-secondary.dropdown-toggle {
+	color: $black;
+}
+.modal-cont {
+	background: rgba(0,0,0,.8);
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+.request-modal {
+	padding: 40px 20px;
+	border: 1px solid $green;
+	width: 80%;
+	height: 40%;
+	margin: 30% 10%;
+	background: white;
+	text-align: center;
+	img {
+		height: 80px;
+		margin-bottom: 10px;
+	}
+	h5 {
+		margin-bottom: 1rem;
+	}
+	p {
+		margin-bottom: 0;
+		font-size: 13px;
+	}
+}
+.lc-textfield {
+	margin: 7px auto;
+	width: 86%;
+	padding: 0.7rem .95rem;
+	border: 1px solid $green !important;
+}
+.lc-textarea {
+	margin: 7px auto;
+	width: 86%;
+	height: 10em;
+	border: 1px solid $green;
+	padding: 0.7rem .95rem;
+}

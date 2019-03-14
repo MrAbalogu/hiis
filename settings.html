@@ -53,21 +53,21 @@
                 </li>
                 <hr/>
                 <li>
-                    <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        About HIIS
+                    <a href="about.html">
+                        <i class="fas fa-phone"></i>
+                         About HIIS
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        Share App
+                        <i class="fas fa-share-alt"></i>
+                         Share App
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        Settings
+                    <a href="settings.html">
+                        <i class="fas fa-cog"></i> 
+                         Settings
                     </a>
                 </li>
             </ul>
@@ -95,10 +95,16 @@
             </div>
             <div>Corporate Health Insurance</div>
             <input type="" name="" placeholder="Type here... ">
-            <footer>
-                <img src="#">
-                <img src="#">
-                <img src="#">
+            <footer class="app-footer">
+                <div id="af-chat" class="af-left">
+                    <img src="img/footerimg-left.png">
+                </div>
+                <div id="af-claims" class="af-middle">
+                    <img src="img/footerimg-middle.png">
+                </div>
+                <div id="af-profile" class="af-right">
+                    <img src="img/footerimg-right.png">
+                </div>
             </footer>
         </div>
     </div>
@@ -117,6 +123,22 @@
     $("#remove-toggle").click(function(e){
         e.preventDefault();
         $("#wrapper").removeClass("toggled");
+    });
+    $("#log-out").click(function(e){
+        e.preventDefault();
+        location.href='login.html';
+    });
+    $("#af-chat").click(function(e){
+        e.preventDefault();
+        location.href='chatbot.html';
+    });
+    $("#af-claims").click(function(e){
+        e.preventDefault();
+        location.href='claims.html';
+    });
+    $("#af-profile").click(function(e){
+        e.preventDefault();
+        location.href='my-profile.html';
     });
     </script>
 

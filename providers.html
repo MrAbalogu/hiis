@@ -2,16 +2,15 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>HIIS UI Designs</title>
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/simple-sidebar.css" rel="stylesheet">
-
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <body>
@@ -19,97 +18,174 @@
     <div id="wrapper">
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
+            <div class="sliderlogo-cont">
+                <img class="side-img" src="img/logo.png"> 
+                <i class="fas fa-times x-icon" id="remove-toggle"></i>
+            </div>
             <ul class="sidebar-nav">
-                <img src="#" class="x-icon" id="remove-toggle"> 
                 <li>
-                    <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        Dashboard
+                    <a href="corporate-profile.html">
+                        <i class="fas fa-tachometer-alt"></i> 
+                         Dashboard
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        My Profile
+                    <a href="my-profile.html">
+                        <i class="fas fa-user"></i> 
+                         My Profile
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        Find a Provider
+                    <a href="providers.html">
+                        <i class="fas fa-search"></i>
+                         Find a Provider
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        Request Reports
+                    <a href="reports.html">
+                        <i class="fas fa-chart-line"></i>
+                         Request Reports
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        Log Complaints
+                    <a href="log-complaints.html">
+                        <i class="fas fa-headset"></i>
+                         Log Complaints
                     </a>
                 </li>
                 <hr/>
                 <li>
-                    <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        About HIIS
+                    <a href="about.html">
+                        <i class="fas fa-phone"></i>
+                         About HIIS
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        Share App
+                        <i class="fas fa-share-alt"></i>
+                         Share App
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        Settings
+                    <a href="settings.html">
+                        <i class="fas fa-cog"></i> 
+                         Settings
                     </a>
                 </li>
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
-
-        <header>
-          <a href="#menu-toggle" id="menu-toggle"><img src="#"></a>
-          <img src="#"> 
-          <span>Provider Network</span>
-          <img src="#">  
-          <input id="search-provider" placeholder="Search Provider here" type="search">
-        </header>
-        <div>
-        	<div>
-	            <div>
-	            	<img src="#">
-	            </div>
-	            <div>
-	            	<h3>Kelina Hospital</h3>
-	            	<img src="#"> Abuja, Gwarimpa
-	            	<p>Address: 10 Ayedun close, Area 11 Garki.</p>
-	            	<p>Hospital <span>0.1 miles away</span></p>
-	            </div>
+        <div class="appbg-wrapper">
+            <header class="app-header">
+             <div id="myprofileheader">
+               <div class="ah-left">
+                 <a href="#menu-toggle" id="menu-toggle">
+                   <i class="fas fa-bars"></i>   
+                 </a>
+               </div>
+               <div class="ah-middle">
+                   <i class="fas fa-user"></i> My Profile
+               </div>
+               <div class="ah-right">
+                 <i id="search" class="fas fa-search-location"></i>
+               </div>
+               <div style="clear: both;"></div>
+             </div>
+             <div id="searchbox">
+                <input class="form-control provider-textfield" type="" name="" placeholder="Search Provider here... ">
+             </div>
+            </header>
+            <div id="hospitals" class="hospitals">
+                <div class="h-listitem">
+                    <div class="hl-img">
+                    </div>
+                    <div class="hl-info">
+                        <h5>Kelina Hospital</h5>
+                        <i class="fas fa-map-marker-alt"></i> <span style="color: #50E3C2;"> Abuja, Gwarimpa </span>
+                        <p>Address: 10 Ayedun close, Area 11 Garki.</p>
+                        <p><span> Hospital </span> <span style="float: right">0.1 miles away</span></p>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+                <div class="h-listitem">
+                    <div class="hl-img">
+                    </div>
+                    <div class="hl-info">
+                        <h5>Kelina Hospital</h5>
+                        <i class="fas fa-map-marker-alt"></i> <span style="color: #50E3C2;"> Abuja, Gwarimpa </span>
+                        <p>Address: 10 Ayedun close, Area 11 Garki.</p>
+                        <p><span> Hospital </span> <span style="float: right">0.1 miles away</span></p>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+                <div class="h-listitem">
+                    <div class="hl-img">
+                    </div>
+                    <div class="hl-info">
+                        <h5>Kelina Hospital</h5>
+                        <i class="fas fa-map-marker-alt"></i> <span style="color: #50E3C2;"> Abuja, Gwarimpa </span>
+                        <p>Address: 10 Ayedun close, Area 11 Garki.</p>
+                        <p><span> Hospital </span> <span style="float: right">0.1 miles away</span></p>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+                <div class="h-listitem">
+                    <div class="hl-img">
+                    </div>
+                    <div class="hl-info">
+                        <h5>Kelina Hospital</h5>
+                        <i class="fas fa-map-marker-alt"></i> <span style="color: #50E3C2;"> Abuja, Gwarimpa </span>
+                        <p>Address: 10 Ayedun close, Area 11 Garki.</p>
+                        <p><span> Hospital </span> <span style="float: right">0.1 miles away</span></p>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+                <div class="h-listitem">
+                    <div class="hl-img">
+                    </div>
+                    <div class="hl-info">
+                        <h5>Kelina Hospital</h5>
+                        <i class="fas fa-map-marker-alt"></i> <span style="color: #50E3C2;"> Abuja, Gwarimpa </span>
+                        <p>Address: 10 Ayedun close, Area 11 Garki.</p>
+                        <p><span> Hospital </span> <span style="float: right">0.1 miles away</span></p>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+                <div class="h-listitem">
+                    <div class="hl-img">
+                    </div>
+                    <div class="hl-info">
+                        <h5>Kelina Hospital</h5>
+                        <i class="fas fa-map-marker-alt"></i> <span style="color: #50E3C2;"> Abuja, Gwarimpa </span>
+                        <p>Address: 10 Ayedun close, Area 11 Garki.</p>
+                        <p><span> Hospital </span> <span style="float: right">0.1 miles away</span></p>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+                <div class="h-listitem">
+                    <div class="hl-img">
+                    </div>
+                    <div class="hl-info">
+                        <h5>Kelina Hospital</h5>
+                        <i class="fas fa-map-marker-alt"></i> <span style="color: #50E3C2;"> Abuja, Gwarimpa </span>
+                        <p>Address: 10 Ayedun close, Area 11 Garki.</p>
+                        <p><span> Hospital </span> <span style="float: right">0.1 miles away</span></p>
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
             </div>
-            <div>
-	            <div>
-	            	<img src="#">
-	            </div>
-	            <div>
-	            	<h3>Kelina Hospital</h3>
-	            	<img src="#"> Abuja, Gwarimpa
-	            	<p>Address: 10 Ayedun close, Area 11 Garki.</p>
-	            	<p>Hospital <span>0.1 miles away</span></p>
-	            </div>
-            </div>
+            <footer class="app-footer">
+                <div id="af-chat" class="af-left">
+                    <img src="img/footerimg-left.png">
+                </div>
+                <div id="af-claims" class="af-middle">
+                    <img src="img/footerimg-middle.png">
+                </div>
+                <div id="af-profile" class="af-right">
+                    <img src="img/footerimg-right.png">
+                </div>
+            </footer>
         </div>
-        <footer>
-            <img src="#">
-            <img src="#">
-            <img src="#">
-        </footer>
     </div>
     <!-- /#wrapper -->
 
@@ -126,6 +202,33 @@
     $("#remove-toggle").click(function(e){
         e.preventDefault();
         $("#wrapper").removeClass("toggled");
+    });
+    $("#searchbox").hide();
+    $("#search").click(function(e){
+        e.preventDefault();
+        $("#myprofileheader").hide();
+        $("#searchbox").show();
+    });
+    $("#hospitals").click(function(e){
+        e.preventDefault();
+        $("#searchbox").hide();
+        $("#myprofileheader").show();
+    });
+    $("#log-out").click(function(e){
+        e.preventDefault();
+        location.href='login.html';
+    });
+    $("#af-chat").click(function(e){
+        e.preventDefault();
+        location.href='chatbot.html';
+    });
+    $("#af-claims").click(function(e){
+        e.preventDefault();
+        location.href='claims.html';
+    });
+    $("#af-profile").click(function(e){
+        e.preventDefault();
+        location.href='my-profile.html';
     });
     </script>
 

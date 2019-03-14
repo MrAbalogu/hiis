@@ -1,0 +1,45 @@
+$purple: #BEA8F3;
+$green: #50E3C2;
+$black: #4A4A4A;
+$light-green: #C4F2E8;
+
+.h-listitem {
+	width: 100%;
+}
+.hl-img {
+	float: left;
+	width: 30%;
+	height: 5em;
+	background: url("../img/kelina.jpg");
+}
+.hl-info {
+	float: left;
+	width: 70%;
+	color: $black;
+	font-size: 12px;
+	padding: 3px 10px 0 10px;
+	h5 {
+		margin-bottom: 0;
+	}
+	p {
+		margin-bottom: 0;
+	}
+	span {
+		color: #CB0C13;
+	}
+}
+.provider-textfield {
+	border: 1px solid $green;
+	border-radius: 0 !important;
+	padding: 10px 10px !important;
+	font-size: 1.5em !important;
+}
+.provider-textfield::placeholder {
+	font-size: .8em !important;
+}
+#searchbox {
+	input {
+		margin-right: 0 !important;
+		overflow: auto;
+	}
+}

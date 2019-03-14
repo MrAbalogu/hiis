@@ -6,6 +6,7 @@
 
 body {
   overflow-x: hidden;
+  color: #4A4A4A;
 }
 
 #wrapper {
@@ -53,11 +54,9 @@ body {
 /* Sidebar Styles */
 
 .sidebar-nav {
-  position: absolute;
-  top: 0;
   width: 100%;
   margin: 0;
-  padding: 10px;
+  padding: 30px 0;
   list-style: none;
 }
 
@@ -69,7 +68,8 @@ body {
 .sidebar-nav li a {
   display: block;
   text-decoration: none;
-  color: #999999;
+  color: #4A4A4A;
+  padding: 8px 0;
 }
 
 .sidebar-nav li a:hover {

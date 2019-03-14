@@ -1,0 +1,28 @@
+$purple: #BEA8F3;
+$green: #50E3C2;
+$black: #4A4A4A;
+$light-green: #C4F2E8;
+
+.claims-list-cont {
+	overflow: scroll;
+}
+.cl-summary {
+	text-align: center;
+	padding: 10px 0;
+	border-bottom: 1px solid #E8E4E4;
+	p {
+		margin-bottom: 0 !important;
+	}
+}
+.cl-listitem {
+	padding: 10px;
+	border-bottom: 1px solid #E8E4E4;
+	small {
+		color: $green;
+	}
+	p {
+		margin-bottom: 0 !important;
+		text-align: right;
+		color: #A93241;
+	}
+}

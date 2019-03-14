@@ -2,16 +2,15 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>Amina.ai UI Designs</title>
+    <title>HIIS UI Designs</title>
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/simple-sidebar.css" rel="stylesheet">
-
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <body>
@@ -19,86 +18,132 @@
     <div id="wrapper">
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
+            <div class="sliderlogo-cont">
+                <img class="side-img" src="img/logo.png"> 
+                <i class="fas fa-times x-icon" id="remove-toggle"></i>
+            </div>
             <ul class="sidebar-nav">
-                <img src="#" class="x-icon" id="remove-toggle"> 
                 <li>
-                    <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        Dashboard
+                    <a href="corporate-profile.html">
+                        <i class="fas fa-tachometer-alt"></i> 
+                         Dashboard
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        My Profile
+                    <a href="my-profile.html">
+                        <i class="fas fa-user"></i> 
+                         My Profile
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        Find a Provider
+                    <a href="providers.html">
+                        <i class="fas fa-search"></i>
+                         Find a Provider
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        Request Reports
+                    <a href="reports.html">
+                        <i class="fas fa-chart-line"></i>
+                         Request Reports
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        Log Complaints
+                    <a href="log-complaints.html">
+                        <i class="fas fa-headset"></i>
+                         Log Complaints
                     </a>
                 </li>
                 <hr/>
                 <li>
-                    <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        About HIIS
+                    <a href="about.html">
+                        <i class="fas fa-phone"></i>
+                         About HIIS
                     </a>
                 </li>
                 <li>
                     <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        Share App
+                        <i class="fas fa-share-alt"></i>
+                         Share App
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        Settings
+                    <a href="settings.html">
+                        <i class="fas fa-cog"></i> 
+                         Settings
                     </a>
                 </li>
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
-
-    	<header>
-           <img src="#"> 
-           <img src="#">  
-           <span>HIIS Chatbot</span>
-           <a href="#menu-toggle" id="menu-toggle"><img src="#"></a>
-        </header>
-        <div>
-        	<div>
-	        	<div>
-		            <input type="date" name="">
-		            <input type="date" name="">
-		        </div>
-		        <div>
-		        	<input type="text" name="">
-		        </div>
+        <div class="appbg-wrapper">
+            <header class="app-header">
+               <div class="ah-left">
+                 <a href="#menu-toggle" id="menu-toggle">
+                   <i class="fas fa-bars"></i>   
+                 </a>
+               </div>
+               <div class="ah-middle">
+                   <i class="fas fa-chart-line"></i> Reports
+               </div>
+               <div class="ah-right">
+                 <i id="log-out" class="fas fa-sign-out-alt"></i>
+               </div>
+               <div style="clear: both;"></div>
+            </header>
+        	<div style="padding-top: 10px; margin-bottom: 0" class="form-group row">
+	            <input class="form-control report-input col-5" type="date" name="">
+	            <input class="form-control report-input2 col-5" type="date" name="">
+	        	<div class="dropdown report-dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    S'ahamatu Yusuf
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Usman Sani</a>
+                    <a class="dropdown-item" href="#">Ahmed Lawal</a>
+                    <a class="dropdown-item" href="#">Dnalama Yesufu</a>
+                  </div>
+                </div>
 	        </div>
-	        Request more +
+            <div class="form-group row">
+                <input class="form-control report-input col-5" type="date" name="">
+                <input class="form-control report-input2 col-5" type="date" name="">
+                <div class="dropdown report-dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    S'ahamatu Yusuf
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Usman Sani</a>
+                    <a class="dropdown-item" href="#">Ahmed Lawal</a>
+                    <a class="dropdown-item" href="#">Dnalama Yesufu</a>
+                  </div>
+                </div>
+            </div>
+            <p style="margin: 10px">Request more +</p>
+            <div style="text-align: center;">
+	           <a id="rq-btn" class="btn green-button">Request Reports</a>
+            </div>
 
-	        <button type="submit">Request Reports</button>
+            <div id="rq-modal" class="modal-cont">
+                <div class="request-modal">
+                    <img src="img/checked.jpg">
+                    <h5>Your Request has been sent</h5>
+                    <p>Mail will be sent to</p>
+                    <p style="color: #55909D">chinedu.abalogu@nnpcgroup.com</p>
+                    <p>with your reports</p>
+                </div>
+            </div>
+            <footer class="app-footer">
+                <div id="af-chat" class="af-left">
+                    <img src="img/footerimg-left.png">
+                </div>
+                <div id="af-claims" class="af-middle">
+                    <img src="img/footerimg-middle.png">
+                </div>
+                <div id="af-profile" class="af-right">
+                    <img src="img/footerimg-right.png">
+                </div>
+            </footer>
         </div>
-        <footer>
-            <img src="#">
-            <img src="#">
-            <img src="#">
-        </footer>
     </div>
     <!-- /#wrapper -->
 
@@ -115,6 +160,31 @@
     $("#remove-toggle").click(function(e){
         e.preventDefault();
         $("#wrapper").removeClass("toggled");
+    });
+    $("#log-out").click(function(e){
+        e.preventDefault();
+        location.href='login.html';
+    });
+    $("#rq-modal").hide();
+    $("#rq-btn").click(function(e){
+        e.preventDefault();
+        $("#rq-modal").show();
+    });
+    $("#rq-modal").click(function(e){
+        e.preventDefault();
+        $("#rq-modal").hide();
+    });
+    $("#af-chat").click(function(e){
+        e.preventDefault();
+        location.href='chatbot.html';
+    });
+    $("#af-claims").click(function(e){
+        e.preventDefault();
+        location.href='claims.html';
+    });
+    $("#af-profile").click(function(e){
+        e.preventDefault();
+        location.href='my-profile.html';
     });
     </script>
 

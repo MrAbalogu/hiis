@@ -14,7 +14,6 @@
 </head>
 
 <body>
-
     <div id="wrapper">
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
@@ -76,47 +75,41 @@
         </div>
         <!-- /#sidebar-wrapper -->
         <div class="appbg-wrapper">
-            <header class="app-header">
+        	<header class="app-header">
                <div class="ah-left">
                  <a href="#menu-toggle" id="menu-toggle">
                    <i class="fas fa-bars"></i>   
                  </a>
                </div>
                <div class="ah-middle">
-                   <i class="fas fa-headset"></i> Log Complaints
+                   <i class="fas fa-tachometer-alt"></i> Dashboard
                </div>
                <div class="ah-right">
                  <i id="log-out" class="fas fa-sign-out-alt"></i>
                </div>
                <div style="clear: both;"></div>
             </header>
-            <div class="form-group row">
-                <div class="dropdown report-dropdown">
-                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Select option to report on
-                  </button>
-                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Claims</a>
-                    <a class="dropdown-item" href="#">Dependants</a>
-                    <a class="dropdown-item" href="#">Providers</a>
-                  </div>
-                </div>
-                <input class="lc-textfield" type="text" name="" placeholder="Type Subject here..">
-                <textarea class="lc-textarea" placeholder="Type Complaint here.."></textarea>
+        	<div class="dashboard-main">
+	        	<div class="dm-name">
+	        		Stephen Sowole
+	        		<span>AXA3O44NDJ</span>
+	        	</div>
+	            <div class="dm-utilised">
+	            	Amount Utilised
+	            	<h1>₦54,900</h1>
+	            </div>
             </div>
-            <p style="margin: 10px">Request more +</p>
-            <div style="text-align: center;">
-               <a id="rq-btn" class="btn green-button">Submit Complaint</a>
-            </div>
-
-            <div id="rq-modal" class="modal-cont">
-                <div class="request-modal">
-                    <img src="img/checked.jpg">
-                    <h5>Your Complaint has been sent</h5>
-                    <p>Mail will be sent to</p>
-                    <p style="color: #55909D">chinedu.abalogu@nnpcgroup.com</p>
-                    <p>with your reports</p>
+            <div class="dependants-cont">
+                <div class="dc-title">
+            	   Dependants
                 </div>
+                <div class="dc-dependants">
+                    <img src="img/no-dependant.png">
+                </div>
+            </div>
+            <div class="dashboard-claims">
+            	<p>Last Successful Login: 18th Nov. 2018 @ 8:00pm</p>
+            	<a href="claims.html"> <i class="far fa-clock"></i> Recent Claims </a>
             </div>
             <footer class="app-footer">
                 <div id="af-chat" class="af-left">
@@ -150,15 +143,6 @@
     $("#log-out").click(function(e){
         e.preventDefault();
         location.href='login.html';
-    });
-    $("#rq-modal").hide();
-    $("#rq-btn").click(function(e){
-        e.preventDefault();
-        $("#rq-modal").show();
-    });
-    $("#rq-modal").click(function(e){
-        e.preventDefault();
-        $("#rq-modal").hide();
     });
     $("#af-chat").click(function(e){
         e.preventDefault();

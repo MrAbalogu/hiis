@@ -1,0 +1,100 @@
+$purple: #BEA8F3;
+$green: #50E3C2;
+
+.af-left {
+	float: left;
+	padding: 10px 0;
+	width: 33.3333333333%;
+	text-align: center;
+	img {
+		height: 50px;
+	}
+	&:hover {
+		background: $green;
+	}
+}
+.af-middle {
+	float: left;
+	width: 33.3333333333%;
+	margin: 0 !important;
+	text-align: center;
+	padding: 10px 0;
+	img {
+		height: 50px;
+	}
+	&:hover {
+		background: $green;
+	}
+}
+.af-right {
+	float: right;
+	padding: 10px 0;
+	width: 33.3333333333%;
+	text-align: center;
+	img {
+		height: 50px;
+	}
+	&:hover {
+		background: $green;
+	}
+}
+.app-textfield {
+	border-left: none !important;
+	border-right: none !important;
+	border-radius: 0 !important;
+	padding: 5px 10px !important;
+	font-size: 1.5em !important;
+	position: absolute;
+	bottom: 2.9em;
+}
+.app-textfield:focus {
+	outline: none !important;
+    border:1px solid $green !important;
+    box-shadow: 0 0 10px rgba(81, 203, 238, .5) !important;
+    border-right: 0 !important;
+    border-left: 0 !important;
+    font-size: 1.5em !important;
+    padding: 5px 10px !important;
+}
+.app-textfield::placeholder {
+	font-size: 1em !important;
+	padding: 0 !important;
+}
+.headimg {
+	height: 25px;
+}
+.chat-cont {
+	width: 100%;
+	padding: 15px;
+}
+.chat-img {
+	width: 10%;
+	float: left;
+}
+.chat-box {
+	width: 90%;
+	float: left;
+	background: #F0F0F0;
+	padding: 5px 10px;
+	border-radius: 10px;
+}
+.chat-obj-box {
+	background: #51D0B3;
+	border: 1px solid #50E3C2;
+	padding: 5px 10px;
+	border-radius: 10px;
+	margin: 5px 0 5px 3em;
+	color: white;
+	font-size: 12px;
+	width: fit-content;
+	&:hover {
+		background: #50E3C2;
+	}
+}
+.chat-resp-box {
+	background: #F0F0F0;
+	padding: 5px 10px;
+	float: right;
+	border: 1px solid #50E3C2;
+	border-radius: 10px;
+}

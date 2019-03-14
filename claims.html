@@ -2,111 +2,82 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <title>HIIS UI Designs</title>
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/simple-sidebar.css" rel="stylesheet">
-
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <body>
-
     <div id="wrapper">
-        <!-- Sidebar -->
-        <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
-                <img src="#" class="x-icon" id="remove-toggle"> 
-                <li>
-                    <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        Dashboard
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        My Profile
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        Find a Provider
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        Request Reports
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        Log Complaints
-                    </a>
-                </li>
-                <hr/>
-                <li>
-                    <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        About HIIS
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        Share App
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="#" class="x-icon" id="remove-toggle"> 
-                        Settings
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <!-- /#sidebar-wrapper -->
-
-        <header>
-          <a href="#menu-toggle" id="menu-toggle"><img src="#"></a>
-          <img src="#"> 
-          <span>Recent Claims</span>
-          <img src="#">  
-        </header>
-        <div>
-            <div>
-            	<p>Current Balance: ₦100,900</p>
-            	<p>Premium Paid: ₦120,000</p>
+        <div class="appbg-wrapper">
+            <header class="app-header">
+               <div class="ah-left">
+                 <i id="left-arrow" class="fas fa-long-arrow-alt-left"></i>
+               </div>
+               <div class="ah-middle">
+                   Recent Claims
+               </div>
+               <div class="ah-right">
+                 <i id="log-out" class="fas fa-sign-out-alt"></i>
+               </div>
+               <div style="clear: both;"></div>
+            </header>
+            <div class="claims-list-cont">
+                <div class="cl-summary">
+                	<p>Current Balance: &nbsp;&nbsp;&nbsp;&nbsp; ₦100,900</p>
+                	<p>Premium Paid: &nbsp;&nbsp;&nbsp;&nbsp; <span style="color: #50E3C2"> ₦120,000 </span></p>
+                </div>
+                <div class="cl-listitem">
+                    SterlingSpecialistHospital: 16 NOV 18 <small>8:22pm</small>
+                    <p>-₦10,230</p>
+                </div>		
+                <div class="cl-listitem">
+                    SterlingSpecialistHospital: 16 NOV 18 <small>8:22pm</small>
+                    <p>-₦10,230</p>
+                </div>  
+                <div class="cl-listitem">
+                    SterlingSpecialistHospital: 16 NOV 18 <small>8:22pm</small>
+                    <p>-₦10,230</p>
+                </div>  
+                <div class="cl-listitem">
+                    SterlingSpecialistHospital: 16 NOV 18 <small>8:22pm</small>
+                    <p>-₦10,230</p>
+                </div>  
+                <div class="cl-listitem">
+                    SterlingSpecialistHospital: 16 NOV 18 <small>8:22pm</small>
+                    <p>-₦10,230</p>
+                </div>  
+                <div class="cl-listitem">
+                    SterlingSpecialistHospital: 16 NOV 18 <small>8:22pm</small>
+                    <p>-₦10,230</p>
+                </div>  
+                <div class="cl-listitem">
+                    SterlingSpecialistHospital: 16 NOV 18 <small>8:22pm</small>
+                    <p>-₦10,230</p>
+                </div>  
+                <div class="cl-listitem">
+                    SterlingSpecialistHospital: 16 NOV 18 <small>8:22pm</small>
+                    <p>-₦10,230</p>
+                </div>  
             </div>
-            <div>
-            	<ul>
-            		<li>
-            			SterlingSpecialistHospital: 16 NOV 18 <span>8:22pm</span>
-            			<p>-₦10,230</p>
-            		</li>
-            		<li>
-            			SterlingSpecialistHospital: 16 NOV 18 <span>8:22pm</span>
-            			<p>-₦10,230</p>
-            		</li>
-            		<li>
-            			SterlingSpecialistHospital: 16 NOV 18 <span>8:22pm</span>
-            			<p>-₦10,230</p>
-            		</li>
-            	</ul>
-            </div>
+            <footer class="app-footer">
+                <div id="af-chat" class="af-left">
+                    <img src="img/footerimg-left.png">
+                </div>
+                <div id="af-claims" class="af-middle">
+                    <img src="img/footerimg-middle.png">
+                </div>
+                <div id="af-profile" class="af-right">
+                    <img src="img/footerimg-right.png">
+                </div>
+            </footer>
         </div>
-        <footer>
-            <img src="#">
-            <img src="#">
-            <img src="#">
-        </footer>
     </div>
     <!-- /#wrapper -->
 
@@ -123,6 +94,26 @@
     $("#remove-toggle").click(function(e){
         e.preventDefault();
         $("#wrapper").removeClass("toggled");
+    });
+    $("#left-arrow").click(function(e){
+        e.preventDefault();
+        location.href='corporate-profile.html';
+    });
+    $("#log-out").click(function(e){
+        e.preventDefault();
+        location.href='login.html';
+    });
+    $("#af-chat").click(function(e){
+        e.preventDefault();
+        location.href='chatbot.html';
+    });
+    $("#af-claims").click(function(e){
+        e.preventDefault();
+        location.href='claims.html';
+    });
+    $("#af-profile").click(function(e){
+        e.preventDefault();
+        location.href='my-profile.html';
     });
     </script>
 

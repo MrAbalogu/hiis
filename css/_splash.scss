@@ -1,0 +1,97 @@
+$purple: #BEA8F3;
+$green: #50E3C2;
+
+.splash-wrapper {
+	background: url("../img/bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+}
+.exp1-wrapper {
+	background: url("../img/exp1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	padding: 2em;
+}
+.exp2-wrapper {
+	background: url("../img/exp2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	padding: 2em;
+}
+.exp3-wrapper {
+	background: url("../img/exp3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	padding: 2em;
+}
+.exp-container {
+	padding: 25px;
+	h2 {
+	  text-align: center;
+	  margin-top: 50%;
+	  font-weight: bolder;
+	}
+}
+.exp1-text {
+	font-size: 2.5em;
+	text-align: center;
+    color: $green;
+}
+.exp2-text {
+	font-size: 2.5em;
+	text-align: center;
+    color: white;
+}
+.exp3-text {
+	font-size: 2.5em;
+	text-align: center;
+    color: white;
+}
+.splashimage {
+	margin: 10px 14%;
+}
+.splash-container {
+	color: #536299;
+	font-weight: bold;
+	height: 100%;
+	padding: 14em 2em;
+}
+.exp-header {
+	height: 10%;
+}
+.exp-landing {
+	padding-top: 10em;
+	height: 80%;
+}
+.exp-footer {
+	height: 10%;
+	width: 100%;
+}
+.exp-circles {
+	width: 100%;
+}
+.circle {
+	width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background: $green;
+    margin: .4em .5em;
+}
+.current-circle {
+	background: $purple;
+}
+.exp-button-cont {
+	margin-right: 3em;
+}

@@ -1,5 +1,17 @@
+@import "chatbot";
+@import "login";
+@import "splash";
+@import "dashboard";
+@import "claims";
+@import "profile";
+@import "providers";
+@import "reports";
+@import "about";
+
 $purple: #BEA8F3;
 $green: #50E3C2;
+$black: #4A4A4A;
+$light-green: #C4F2E8;
 
 html, body {
 	height: 100%;
@@ -34,10 +46,13 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, tex
 	border-color: rgba(255,255,255,.5);
 }
 .x-icon {
-	position: relative;
+	position: absolute;
+	top: 10px;
+	right: 0;
 	float: right;
 	width: 40px;
 	height: 40px;
+	font-size: 2em;
 }
 .dark-screen {
 	border: 1px solid rgba(255,255,255,.8) !important;
@@ -52,6 +67,8 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, tex
 /**************************************
 	VARIABLES
 ***************************************/
+
+/* BUTTONS */
 .purple-button {
 	background: $purple;
 	color: white;
@@ -59,44 +76,58 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, tex
 	border-radius: 34px;
     padding: .3em 1em;
 }
+.green-button {
+	background: $green;
+	color: white !important;
+	font-weight: 200;
+	border-radius: 5px;
+    padding: .5em 1.7em;
+    &:hover {
+    	background: $light-green !important;
+    }
+}
+.div-left {
+	text-align: left !important;
+	p {
+		padding: .4em 0;
+		color: gray;
+	}
+}
+.chatbot-button {
+	background: #EAEAEA;
+    color: #4A4A4A;
+    width: 90%;
+    margin: 17% 5%;
+    -webkit-box-shadow: 10px 10px 50px -8px #a6a6a6;
+    -moz-box-shadow: 10px 10px 50px -8px #a6a6a6;
+    box-shadow: 10px 10px 50px -8px #a6a6a6;
+}
+.chatbot-button-img-cont {
+	float: left;
 
-/**************************************
-	SPLASH PAGE AND EXP PAGES
-***************************************/
-.splash-wrapper {
-	background: url("../img/bg.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: fixed;
-	height: 100%;
-	width: 100%;
+	img {
+		padding: 10px;
+		height: 58px;
+	}
 }
-.exp1-wrapper {
-	background: url("../img/exp1.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: fixed;
-	height: 100%;
-	width: 100%;
-	padding: 2em;
+.chatbot-button-text-cont {
+	float: right;
+	word-break:break-all;
+	width: 80%;
+	line-height: 1.2;
+	text-align: left;
+    padding-top: 11px;
 }
-.exp2-wrapper {
-	background: url("../img/exp2.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: fixed;
-	height: 100%;
-	width: 100%;
-	padding: 2em;
+
+/* FORMS */
+.form-group {
+	margin-bottom: .6rem;
 }
-.exp3-wrapper {
-	background: url("../img/exp3.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: fixed;
-	height: 100%;
+
+/* APP HEADER */
+.app-header {
 	width: 100%;
-	padding: 2em;
+	border-bottom: 1px solid #F2F2F2;
 }
 .login-wrapper {
 	background: url("../img/auth-bg.jpg");
@@ -107,62 +138,67 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, tex
 	width: 100%;
 	padding: 1em;
 }	
-.exp-container {
-	padding: 25px;
-	h2 {
-	  text-align: center;
-	  margin-top: 50%;
-	  font-weight: bolder;
+.appbg-wrapper {
+	background: url("../img/auth-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+}	
+.ah-left {
+	float: left;
+    padding: 6px 15px;
+    width: 25%;
+    font-size: 30px;
+    color: $green;
+	img {
+		height: 30px;
+	}
+	a {
+		color: $green;
 	}
 }
-.exp1-text {
-	font-size: 2.5em;
+.ah-middle {
+	float: left;
+	width: 50%;
+	margin: 0 !important;
 	text-align: center;
-    color: $green;
+	padding: 15px 0;
+	font-size: 1.2em;
+	img {
+		height: 30px;
+	}
 }
-.exp2-text {
-	font-size: 2.5em;
-	text-align: center;
-    color: white;
+.ah-right {
+	float: right;
+    padding: 4px 15px;
+    width: 25%;
+    font-size: 32px;
+    color: #50E3C2;
+    text-align: right;
+	img {
+		height: 30px;
+	}
 }
-.exp3-text {
-	font-size: 2.5em;
-	text-align: center;
-    color: white;
+
+/* FOOTER */
+.app-footer {
+	width: 100% !important;
+	bottom: 0;
+	position: absolute;
+	background: #D3F0E9;
 }
-.splashimage {
-	margin: 10px 14%;
+
+/* SLIDER */
+#sidebar-wrapper {
+	background: $light-green !important;
+	color: $black !important;
 }
-.splash-container {
-	color: #536299;
-	font-weight: bold;
-	height: 100%;
-	padding: 14em 2em;
+.side-img {
+	height: 50px;
+	float: left;
 }
-.exp-header {
-	height: 10%;
-}
-.exp-landing {
-	padding-top: 10em;
-	height: 80%;
-}
-.exp-footer {
-	height: 10%;
-	width: 100%;
-}
-.exp-circles {
-	width: 100%;
-}
-.circle {
-	width: 20px;
-    height: 20px;
-    border-radius: 15px;
-    background: $green;
-    margin: .4em .5em;
-}
-.current-circle {
-	background: $purple;
-}
-.exp-button-cont {
-	margin-right: 3em;
+.sliderlogo-cont {
+	padding: 2em 2.3em;
 }
