@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>HIIS UI Designs</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+        <div class="overlayadvanced">
+            <div class="reportpage">
+                <img class="imagelay" src="img/checked.jpg">
+        <h5>Your report has been Sent</h5><br>
+        <h6>Mail will be sent to</h6>
+
+        <a style="text-align:center; margin: 0 auto;" href="#">chinedu.abalogu@nnpcgroup.com</a>
+    </div>
+     </div>
+
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <div class="sliderlogo-cont">
+                <img class="side-img" src="img/logo.png"> 
+                <i class="fas fa-times x-icon" id="remove-toggle"></i>
+            </div>
+            <ul class="sidebar-nav">
+                <li>
+                    <a href="corporate-profile.html">
+                        <i class="fas fa-tachometer-alt"></i> 
+                         Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="my-profile.html">
+                        <i class="fas fa-user"></i> 
+                         My Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="providers.html">
+                        <i class="fas fa-search"></i>
+                         Find a Provider
+                    </a>
+                </li>
+                <li>
+                    <a href="reports.html">
+                        <i class="fas fa-chart-line"></i>
+                         Request Reports
+                    </a>
+                </li>
+                <li>
+                    <a href="log-complaints.html">
+                        <i class="fas fa-headset"></i>
+                         Log Complaints
+                    </a>
+                </li>
+                <hr/>
+                <li>
+                    <a href="about.html">
+                        <i class="fas fa-phone"></i>
+                         About HIIS
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-share-alt"></i>
+                         Share App
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html">
+                        <i class="fas fa-cog"></i> 
+                         Settings
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <div class="appbg-wrapper">
+            <header class="app-header">
+               <div class="ah-left">
+                 <a href="#menu-toggle" id="menu-toggle">
+                   <i class="fas fa-bars"></i>   
+                 </a>
+               </div>
+               <div class="ah-middle">
+                   <i class="fas fa-user"></i> My Profile
+               </div>
+               <div class="ah-right">
+                 <i id="log-out" class="fas fa-sign-out-alt"></i>
+               </div>
+               <div style="clear: both;"></div>
+            </header>
+           
+            <div class="advanced">
+                    <input class="halfinputs dropdown form-control" type="date" name="" placeholder="From">
+                    <input class="halfinputs form-control" type="date" name="" placeholder="10-11-2018" style="margin-left:4%">
+
+                    <div class="fullinputs">
+                        <select class="form-control" id="sel1">
+                            <option>Axa Mansard</option>
+                            <option>NNPC HMO</option>
+                            <option>Hygiea</option>
+                            <option>Mansard</option>
+                        </select>
+                    </div>
+
+                    <input class="halfinputs dropdown form-control" type="date" name="" placeholder="10-11-2018">
+                    <input class="halfinputs form-control" type="date" name="" placeholder="10-11-2018" style="margin-left:4%">
+
+                    <select class="select advinput form-control">
+                        <option>Select HOM</option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                    <h6>More +</h6>
+            
+                <button class="button btn">Advanced Search</button>
+            </div></div>
+            <footer class="app-footer">
+                <div id="af-chat" class="af-left">
+                    <img src="img/footerimg-left.png">
+                </div>
+                <div id="af-claims" class="af-middle">
+                    <img src="img/footerimg-middle.png">
+                </div>
+                <div id="af-profile" class="af-right">
+                    <img src="img/footerimg-right.png">
+                </div>
+            </footer>
+    
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    $("#remove-toggle").click(function(e){
+        e.preventDefault();
+        $("#wrapper").removeClass("toggled");
+    });
+    $("#benefits").hide();
+    $("#bf").click(function(e){
+        e.preventDefault();
+        $("#dependants").hide();
+        $("#benefits").show();
+    });
+    $("#dp").click(function(e){
+        e.preventDefault();
+        $("#benefits").hide();
+        $("#dependants").show();
+    });
+    $("#log-out").click(function(e){
+        e.preventDefault();
+        location.href='login.html';
+    });
+    $("#af-chat").click(function(e){
+        e.preventDefault();
+        location.href='chatbot.html';
+    });
+    $("#af-claims").click(function(e){
+        e.preventDefault();
+        location.href='claims.html';
+    });
+    $("#af-profile").click(function(e){
+        e.preventDefault();
+        location.href='my-profile.html';
+    });
+    </script>
+
+</body>
+
+</html>

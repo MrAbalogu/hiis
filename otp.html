@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>HIIS UI Designs</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/general.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <div class="sliderlogo-cont">
+                <img class="side-img" src="img/logo.png"> 
+                <i class="fas fa-times x-icon" id="remove-toggle"></i>
+            </div>
+            <ul class="sidebar-nav">
+                <li>
+                    <a href="corporate-profile.html">
+                        <i class="fas fa-tachometer-alt"></i> 
+                         Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="my-profile.html">
+                        <i class="fas fa-user"></i> 
+                         My Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="providers.html">
+                        <i class="fas fa-search"></i>
+                         Find a Provider
+                    </a>
+                </li>
+                <li>
+                    <a href="reports.html">
+                        <i class="fas fa-chart-line"></i>
+                         Request Reports
+                    </a>
+                </li>
+                <li>
+                    <a href="log-complaints.html">
+                        <i class="fas fa-headset"></i>
+                         Log Complaints
+                    </a>
+                </li>
+                <hr/>
+                <li>
+                    <a href="about.html">
+                        <i class="fas fa-phone"></i>
+                         About HIIS
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-share-alt"></i>
+                         Share App
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html">
+                        <i class="fas fa-cog"></i> 
+                         Settings
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <div class="appbg-wrapper">
+            <header class="app-header">
+                    <div class="ah-left">
+                            <a href="#menu-toggle" id="menu-toggle">
+                              <img src="img/menu-icon.png">    
+                            </a>  
+                            
+                          </div>
+               <div class="ah-middle">
+                   <i  style="color: #50E3C2;font-size: 25px; "></i><h6>Search HIIS Member</h6>
+               </div>
+               <div class="ah-right">
+                    <a href="#menu-toggle" id="menu-toggle">
+                      <img src="img/logout.png">    
+                    </a>  
+                    
+                  </div>
+               <div style="clear: both;"></div>
+            </header>
+            <div class="overlayadvanced">
+                 <div class="otpdialog">
+
+                    <div style="text-align: center; color:white; background-color:#50E3C2; height: 45px; padding:10px; position:relative;" ><h6>Search HIIS Members</h6></div><br>
+                  
+                   
+                    <div style="margin:25px;">
+                        <label>
+                            <h6>Please type One Time Password sent to enrollee's phone number</h6>
+                        </label>
+                        <input type="text" name="" placeholder=" OTP Password" class="form-control">
+                    </div>
+                <button style=" margin:25px; text-align:center; background-color: #50E3C2; color:white; border-radius: 10px; width:110px;" class="btn buttontwo">Submit</button>
+            
+            <h6 style=" text-align:center; margin: 0 auto; text-decoration: underline;">Resend OTP</h6>
+            </div>
+           
+        </div>
+                
+                <div style="clear: both"></div>
+                <div id="dependants">   
+                           
+                                                               
+                </div>
+                
+            </div>
+            <footer class="app-footer">
+                <div id="af-chat" class="af-left">
+                    <img src="img/footerimg-left.png">
+                </div>
+                <div id="af-claims" class="af-middle">
+                    <img src="img/footerimg-middle.png">
+                </div>
+                <div id="af-profile" class="af-right">
+                    <img src="img/footerimg-right.png">
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    $("#remove-toggle").click(function(e){
+        e.preventDefault();
+        $("#wrapper").removeClass("toggled");
+    });
+    $("#benefits").hide();
+    $("#bf").click(function(e){
+        e.preventDefault();
+        $("#dependants").hide();
+        $("#benefits").show();
+    });
+    $("#dp").click(function(e){
+        e.preventDefault();
+        $("#benefits").hide();
+        $("#dependants").show();
+    });
+    $("#log-out").click(function(e){
+        e.preventDefault();
+        location.href='login.html';
+    });
+    $("#af-chat").click(function(e){
+        e.preventDefault();
+        location.href='chatbot.html';
+    });
+    $("#af-claims").click(function(e){
+        e.preventDefault();
+        location.href='claims.html';
+    });
+    $("#af-profile").click(function(e){
+        e.preventDefault();
+        location.href='my-profile.html';
+    });
+    </script>
+
+</body>
+
+</html>
