@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>HIIS UI Designs</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body  style="background-color: #cbc8c8">
+
+
+     <div id="dependants">
+	<div class="d-listitem"  style="text-align: center; margin: 10px 10px;">
+		<div>Paid Claims </div></div><div style="clear: both"></div></div>
+		<div class="d-listitem"  style="text-align: center;margin: 10px 10px;">
+
+		<div>UnPaid Claims </div></div><div style="clear: both"></div></div>
+		<div class="d-listitem"  style="text-align: center;margin: 10px 10px;">
+		<div>Pending Claims </div></div><div style="clear: both"></div></div>
+		<div class="d-listitem"  style="text-align: center;margin: 10px 10px;">
+		<div>Rejected Claims </div></div><div style="clear: both"></div></div>
+		<div class="d-listitem"  style="text-align: center;margin: 10px 10px;">
+		<div>Advanced Claims </div></div><div style="clear: both"></div></div>
+	</div>
+
+
+
+
+
+
+
+
+	<script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    $("#remove-toggle").click(function(e){
+        e.preventDefault();
+        $("#wrapper").removeClass("toggled");
+    });
+    $("#benefits").hide();
+    $("#bf").click(function(e){
+        e.preventDefault();
+        $("#dependants").hide();
+        $("#benefits").show();
+    });
+    $("#dp").click(function(e){
+        e.preventDefault();
+        $("#benefits").hide();
+        $("#dependants").show();
+    });
+    $("#log-out").click(function(e){
+        e.preventDefault();
+        location.href='login.html';
+    });
+    $("#af-chat").click(function(e){
+        e.preventDefault();
+        location.href='chatbot.html';
+    });
+    $("#af-claims").click(function(e){
+        e.preventDefault();
+        location.href='claims.html';
+    });
+    $("#af-profile").click(function(e){
+        e.preventDefault();
+        location.href='my-profile.html';
+    });
+    </script>
+
+</body>
+
+</html>

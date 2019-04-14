@@ -1,0 +1,39 @@
+.halfinputs {
+    width: 48%;
+    float: left;
+}
+.advanced {
+    padding: 10px;
+}
+.fullinputs {
+    width: 100%;
+    float: left;
+    color: black;
+}
+#sel1 {
+    margin-bottom: 10px;
+}
+select.form-control:not([size]):not([multiple]) {
+    height: 50px;
+}
+#d-recentlistitem{
+    padding: 10px;
+    background-color: #FFDFE3;
+}
+#e-recentlistitem{
+    padding: 10px;
+    background-color:#F3FFE5; 
+}
+#f-recentlistitem{
+    padding: 10px;
+    background-color: #FFE9C4;
+}
+.button{
+    padding:5px;
+    border-radius: 10px;
+    background-color:#50E3C2;
+    width:160px;
+    color:white;
+  
+  
+}

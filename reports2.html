@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>HIIS UI Designs</title>
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <div class="sliderlogo-cont">
+                <img class="side-img" src="img/logo.png"> 
+                <i class="fas fa-times x-icon" id="remove-toggle"></i>
+            </div>
+            <ul class="sidebar-nav">
+                <li>
+                    <a href="corporate-profile.html">
+                        <i class="fas fa-tachometer-alt"></i> 
+                         Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="my-profile.html">
+                        <i class="fas fa-user"></i> 
+                         My Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="providers.html">
+                        <i class="fas fa-search"></i>
+                         Find a Provider
+                    </a>
+                </li>
+                <li>
+                    <a href="reports.html">
+                        <i class="fas fa-chart-line"></i>
+                         Request Reports
+                    </a>
+                </li>
+                <li>
+                    <a href="log-complaints.html">
+                        <i class="fas fa-headset"></i>
+                         Log Complaints
+                    </a>
+                </li>
+                <hr/>
+                <li>
+                    <a href="about.html">
+                        <i class="fas fa-phone"></i>
+                         About HIIS
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-share-alt"></i>
+                         Share App
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html">
+                        <i class="fas fa-cog"></i> 
+                         Settings
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <div class="appbg-wrapper">
+            <header class="app-header">
+               <div class="ah-left">
+                 <a href="#menu-toggle" id="menu-toggle">
+                   <img src="img/menu-square.png">    
+                 </a>
+               </div>
+               <div class="ah-middle">
+                <i id="search" class="fas fa-search-location" style="color: #50E3C2;font-size: 20px; "></i> Advanced Claims Search
+               </div>
+               <div class="ah-right">
+                 <img src="img/logout.png">
+               </div>
+               <div style="clear: both;"></div>
+            </header>
+        	<div style="padding-top: 10px; margin-bottom: 0" class="form-group row">
+	            <input class="form-control report-input col-5" type="date" style="color: gray">
+	            <input class="form-control report-input2 col-5" type="date" style="color: gray
+                ">
+	        	<div class="dropdown report-dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Axa Mansard
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Usman Sani</a>
+                    <a class="dropdown-item" href="#">Ahmed Lawal</a>
+                    <a class="dropdown-item" href="#">Dnalama Yesufu</a>
+                  </div>
+                </div>
+	        </div>
+            <div class="form-group row">
+                <input class="form-control report-input col-5" type="date"style="color: gray">
+                <input class="form-control report-input2 col-5" type="date"  style="color: gray">
+                <div class="dropdown report-dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   Select HMO
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Usman Sani</a>
+                    <a class="dropdown-item" href="#">Ahmed Lawal</a>
+                    <a class="dropdown-item" href="#">Dnalama Yesufu</a>
+                  </div>
+                </div>
+            </div>
+            <p style="margin: 10px">More +</p>
+            <div style="text-align: center;">
+	           <a id="rq-btn" class="btn green-button">Advanced Search</a>
+            </div>
+
+            <div id="rq-modal" class="modal-cont">
+                <div class="request-modal">
+                    <img src="img/checked.jpg">
+                    <h5>Your Request has been sent</h5>
+                    <p>Mail will be sent to</p>
+                    <p style="color: #55909D">chinedu.abalogu@nnpcgroup.com</p>
+                    <p>with your reports</p>
+                </div>
+            </div>
+            <footer class="app-footer">
+                <div id="af-chat" class="af-left">
+                    <img src="img/footerimg-left.png">
+                </div>
+                <div id="af-claims" class="af-middle">
+                    <img src="img/footerimg-middle.png">
+                </div>
+                <div id="af-profile" class="af-right">
+                    <img src="img/footerimg-right.png">
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    $("#remove-toggle").click(function(e){
+        e.preventDefault();
+        $("#wrapper").removeClass("toggled");
+    });
+    $("#log-out").click(function(e){
+        e.preventDefault();
+        location.href='login.html';
+    });
+    $("#rq-modal").hide();
+    $("#rq-btn").click(function(e){
+        e.preventDefault();
+        $("#rq-modal").show();
+    });
+    $("#rq-modal").click(function(e){
+        e.preventDefault();
+        $("#rq-modal").hide();
+    });
+    $("#af-chat").click(function(e){
+        e.preventDefault();
+        location.href='chatbot.html';
+    });
+    $("#af-claims").click(function(e){
+        e.preventDefault();
+        location.href='claims.html';
+    });
+    $("#af-profile").click(function(e){
+        e.preventDefault();
+        location.href='my-profile.html';
+    });
+    </script>
+
+</body>
+
+</html>

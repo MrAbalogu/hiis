@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>HIIS UI Designs</title>
+    <link rel="stylesheet" type="text/css" href="css/hiss.css" />
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+	<div class="appbg-wrapper">
+            <header class="app-header">
+               <div class="ah-left">
+                 <a href="#menu-toggle" id="menu-toggle">
+                   <i class="fas fa-bars"></i>   
+                 </a>
+               </div>
+               <div class="ah-middle">
+                   <i class="fas fa-tachometer-alt"></i> Dashboard
+               </div>
+               <div class="ah-right">
+                 <i id="log-out" class="fas fa-sign-out-alt"></i>
+               </div>
+               <div style="clear: both;"></div>
+            </header>
+
+            <div class="claim-all" style="align-items: baseline; text-align: center;">
+            	<div class="new-claim" style="float: left;">New Claim</div>
+            	<div class="all-claims" style="float: right;">All Claims</div>
+            </div>
+
+            <div class="Services" style="text-align: center; padding-top: 90px;">
+            	
+            	<div class="med-ser">Medical Services</div>
+            	<div class="opt-ser">Optical Services</div>
+            	<div class="den-ser">Dental Services</div>
+            	<div class="pha-ser">Pharmacy Service</div>
+            	<div class="dia-ser">Diagnostic Services</div>
+
+            </div>
+
+
+
+            <footer class="app-footer">
+                <div id="af-chat" class="af-left">
+                    <img src="img/footerimg-left.png">
+                </div>
+                <div id="af-claims" class="af-middle">
+                    <img src="img/footerimg-middle.png">
+                </div>
+                <div id="af-profile" class="af-right">
+                    <img src="img/footerimg-right.png">
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    $("#remove-toggle").click(function(e){
+        e.preventDefault();
+        $("#wrapper").removeClass("toggled");
+    });
+    $("#searchbox").hide();
+    $("#search").click(function(e){
+        e.preventDefault();
+        $("#myprofileheader").hide();
+        $("#searchbox").show();
+    });
+    $("#hospitals").click(function(e){
+        e.preventDefault();
+        $("#searchbox").hide();
+        $("#myprofileheader").show();
+    });
+    $("#log-out").click(function(e){
+        e.preventDefault();
+        location.href='login.html';
+    });
+    $("#af-chat").click(function(e){
+        e.preventDefault();
+        location.href='chatbot.html';
+    });
+    $("#af-claims").click(function(e){
+        e.preventDefault();
+        location.href='claims.html';
+    });
+    $("#af-profile").click(function(e){
+        e.preventDefault();
+        location.href='my-profile.html';
+    });
+    </script>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</html>>
+</body>

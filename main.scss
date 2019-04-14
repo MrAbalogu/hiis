@@ -1,0 +1,204 @@
+@import "chatbot";
+@import "login";
+@import "splash";
+@import "dashboard";
+@import "claims";
+@import "profile";
+@import "providers";
+@import "reports";
+@import "about";
+
+$purple: #BEA8F3;
+$green: #50E3C2;
+$black: #4A4A4A;
+$light-green: #C4F2E8;
+
+html, body {
+	height: 100%;
+}
+::placeholder {
+    color: black;
+    font-size: 12px;
+    opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: black;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color: black;
+}
+input[type=text], input[type=password], input[type=email], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  border: 1px solid #DDDDDD;
+}
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, textarea:focus {
+    box-shadow: 0 0 10px rgba(81, 203, 238, .5);
+    border: 1px solid rgba(0, 0, 128, .1);
+}
+.hr-black {
+	border-color: rgba(0,0,0,.5);
+}
+.hr-white {
+	border-color: rgba(255,255,255,.5);
+}
+.x-icon {
+	position: absolute;
+	top: 10px;
+	right: 0;
+	float: right;
+	width: 40px;
+	height: 40px;
+	font-size: 2em;
+}
+.dark-screen {
+	border: 1px solid rgba(255,255,255,.8) !important;
+	color: rgba(255,255,255,.8) !important;
+}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+/**************************************
+	VARIABLES
+***************************************/
+
+/* BUTTONS */
+.purple-button {
+	background: $purple;
+	color: white;
+	font-weight: 700;
+	border-radius: 34px;
+    padding: .3em 1em;
+}
+.green-button {
+	background: $green;
+	color: white !important;
+	font-weight: 200;
+	border-radius: 5px;
+    padding: .5em 1.7em;
+    &:hover {
+    	background: $light-green !important;
+    }
+}
+.div-left {
+	text-align: left !important;
+	p {
+		padding: .4em 0;
+		color: gray;
+	}
+}
+.chatbot-button {
+	background: #EAEAEA;
+    color: #4A4A4A;
+    width: 90%;
+    margin: 17% 5%;
+    -webkit-box-shadow: 10px 10px 50px -8px #a6a6a6;
+    -moz-box-shadow: 10px 10px 50px -8px #a6a6a6;
+    box-shadow: 10px 10px 50px -8px #a6a6a6;
+}
+.chatbot-button-img-cont {
+	float: left;
+
+	img {
+		padding: 10px;
+		height: 58px;
+	}
+}
+.chatbot-button-text-cont {
+	float: right;
+	word-break:break-all;
+	width: 80%;
+	line-height: 1.2;
+	text-align: left;
+    padding-top: 11px;
+}
+
+/* FORMS */
+.form-group {
+	margin-bottom: .6rem;
+}
+
+/* APP HEADER */
+.app-header {
+	width: 100%;
+	border-bottom: 1px solid #F2F2F2;
+}
+.login-wrapper {
+	background: url("../img/auth-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	padding: 1em;
+}	
+.appbg-wrapper {
+	background: url("../img/auth-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+}	
+.ah-left {
+	float: left;
+    padding: 6px 15px;
+    width: 25%;
+    font-size: 30px;
+    color: $green;
+	img {
+		height: 30px;
+	}
+	a {
+		color: $green;
+	}
+}
+.ah-middle {
+	float: left;
+	width: 50%;
+	margin: 0 !important;
+	text-align: center;
+	padding: 15px 0;
+	font-size: 1.2em;
+	img {
+		height: 30px;
+	}
+}
+.ah-right {
+	float: right;
+    padding: 4px 15px;
+    width: 25%;
+    font-size: 32px;
+    color: #50E3C2;
+    text-align: right;
+	img {
+		height: 30px;
+	}
+}
+
+/* FOOTER */
+.app-footer {
+	width: 100% !important;
+	bottom: 0;
+	position: absolute;
+	background: #D3F0E9;
+}
+
+/* SLIDER */
+#sidebar-wrapper {
+	background: $light-green !important;
+	color: $black !important;
+}
+.side-img {
+	height: 50px;
+	float: left;
+}
+.sliderlogo-cont {
+	padding: 2em 2.3em;
+}
